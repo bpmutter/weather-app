@@ -1,0 +1,38 @@
+/* @import "reset.css"; */
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Mono", sans-serif;
+    color:#404040;
+}
+/* prettier-ignore */
+p, button, span, div, ul, li{
+    font-family: "Roboto Slab", sans-serif;
+    color: #404040;
+
+}
+i {
+  color: #404040;
+  display: inline-block;
+}
+input,
+textarea {
+  color: #404040;
+  border-radius: 1px;
+  border: 1px solid whitesmoke;
+  font-size: 14px;
+  display: inline-block;
+}
+button {
+  display: inline;
+}
+
+.subheading {
+  font-family: "Roboto", sans-serif;
+  color: #a6a6a6;
+}
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}

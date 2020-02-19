@@ -1,0 +1,154 @@
+body {
+  background-image: url(https://farm3.static.flickr.com/2098/2260149771_00cb406fd6_o.jpg);
+}
+
+#main {
+  border-radius: 3rem;
+}
+
+i {
+  color: #404040;
+  display: inline-block;
+}
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+
+  font-size: 3em;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  background-color: hsla(179, 89%, 78%, 0.647);
+  border: 1px solid #a4a4a4;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background-color: hsl(179, 100%, 51%);
+}
+button:active {
+  background-color: hsla(179, 89%, 78%, 0.9);
+  border: 1px solid #a1a1a1;
+}
+#main {
+  background-color: rgb(255, 255, 255, 0.85);
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 4%;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3rem;
+}
+
+fieldset {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 2rem;
+  border: 1px solid #404040;
+  padding: 0.5rem 0.5rem;
+}
+#container--search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#search {
+  width: 100%;
+  font-size: 1.5em;
+  background-color: transparent;
+  padding: 0 0.5rem;
+  border: none !important;
+}
+#search:focus {
+  outline: none;
+}
+
+#basic-info {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2.25rem;
+  grid-column: 1/2;
+  margin: 0.5rem 0;
+}
+#time-info {
+  grid-column: 1/2;
+}
+#change-units {
+  grid-column: 2/3;
+  margin-top: 1.5rem;
+}
+
+#temp-info {
+  margin: 0 auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  text-align: center;
+}
+#actual-temp {
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  font-size: 2.2em;
+}
+#min-temp {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#max-temp {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#feels-like {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: center;
+}
+#weather {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+}
+
+#other-info {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px #404040 solid;
+  border-radius: 1rem;
+}
+
+.row--other-info:nth-of-type(even) {
+  background-color: #a4a4a4;
+}
+.row--other-info:last-of-type {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.row--other-info {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.label--other-info {
+  grid-column: 1/2;
+  padding-left: 4.5rem;
+}
+.content--other-info {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.active {
+  background-color: hsl(179, 100%, 51%);
+}

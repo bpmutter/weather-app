@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Made by Ben Perlmutter-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/07987f6265.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon.ico"
+    />
+
+    <!-- fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="main">
+      <h1><i class="fas fa-poo-storm"></i></h1>
+      <form id="search-input">
+        <fieldset>
+          <div id="container--search">
+            <input type="search" id="search" name="search" />
+            <button for="search" id="search-button">
+              <i class="fas fa-search-location"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <div id="city-info">
+        <div id="basic-info">
+          <h2><span id="city-name"> </span>, <span id="country"></span></h2>
+          <div id="change-units">
+            <button id="far" class="button--temp">°F</button>
+            <button id="celc" class="button--temp">°C</button>
+          </div>
+          <div id="time-info" class="subheading"></div>
+        </div>
+
+        <div id="temp-info">
+          <span id="actual-temp"
+            ><span id="actual-temp-measure"> </span>
+            <span class="temp-unit"> °C</span></span
+          >
+          <span id="min-temp"
+            >Min: <span id="min-temp-measure"> </span
+            ><span class="temp-unit"> °C</span></span
+          >
+          <span id="max-temp"
+            >Max: <span id="max-temp-measure"> </span
+            ><span class="temp-unit"> °C</span></span
+          >
+
+          <span id="feels-like">
+            Feels Like <span id="feels-like-measure"> </span
+            ><span class="temp-unit"> °C</span>
+          </span>
+          <span id="weather"> </span>
+        </div>
+
+        <div id="other-info">
+          <div class="row--other-info">
+            <div class="label--other-info">
+              <i class="fas fa-wind"></i> Wind
+            </div>
+            <div class="content--other-info">
+              <span id="wind-measure"> </span> m/s
+            </div>
+          </div>
+          <div class="row--other-info">
+            <div class="label--other-info">
+              <i class="fas fa-tint"></i> Humidity
+            </div>
+            <div class="content--other-info">
+              <span id="humidity-measure"> </span>%
+            </div>
+          </div>
+          <div class="row--other-info">
+            <div class="label--other-info">
+              <i class="fas fa-sun"></i> Sunrise
+            </div>
+            <div class="content--other-info" id="sunrise-time"></div>
+          </div>
+          <div class="row--other-info">
+            <div class="label--other-info">
+              <i class="fas fa-moon"></i> Sunset
+            </div>
+            <div class="content--other-info" id="sunset-time"></div>
+          </div>
+        </div>
+
+        <span></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -23,10 +23,9 @@ const queryWeatherAPI = async location => {
       timezone: locJson.timezone,
       id: locJson.id
     };
-    console.log(locJson);
+
     return cityInfo;
   } catch (error) {
-    console.log(error);
     alert("invalid search term! try again");
   }
 };
@@ -88,8 +87,6 @@ document.getElementById("search-input").addEventListener("submit", e => {
 const renderWeather = location => {
   document.getElementById("city-name").innerText = location.name;
   document.getElementById("country").innerText = location.country;
-  console.log(location);
-  debugger;
   document.getElementById("time-info").innerText = location.dateTime;
   document.getElementById("actual-temp-measure").innerText =
     Math.floor((location.temp - 273.15) * 10) / 10;
@@ -173,7 +170,6 @@ function convertTimestamptoTime(time, timezone) {
 
   const dateObj = new Date((time + timezone) * 1000);
   const utcString = dateObj.toUTCString();
-  console.log(utcString);
 
   let timeCleaned = utcString.slice(17, 22);
   let hours = parseInt(timeCleaned.slice(0, 2));
@@ -181,7 +177,6 @@ function convertTimestamptoTime(time, timezone) {
     hours -= 12;
   }
   const mins = timeCleaned.slice(3, 5);
-  console.log("hours" + hours + " mins " + mins);
   timeCleaned = hours + ":" + mins;
   return timeCleaned;
 }

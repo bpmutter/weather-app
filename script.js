@@ -1,7 +1,7 @@
 const queryWeatherAPI = async location => {
   try {
     let locationData = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5fb47fb1a33c7a53280e6205ffefb653`
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5fb47fb1a33c7a53280e6205ffefb653`
     );
     let locJson = await locationData.json();
 
@@ -34,7 +34,7 @@ const locToTime = async city => {
   const lat = city.lat;
   const lon = city.lon;
   let timeInfo = await fetch(
-    `http://api.timezonedb.com/v2.1/get-time-zone?key=AS3476QV3GGJ&format=json&by=position&lat=${lat}&lng=${lon}`
+    `https://api.timezonedb.com/v2.1/get-time-zone?key=AS3476QV3GGJ&format=json&by=position&lat=${lat}&lng=${lon}`
   );
   let timeJson = await timeInfo.json();
   const timeString = timeJson.formatted;
